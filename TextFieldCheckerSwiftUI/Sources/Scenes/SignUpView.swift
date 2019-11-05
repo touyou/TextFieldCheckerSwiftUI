@@ -10,24 +10,31 @@ import SwiftUI
 import UIKit
 
 struct SignUpView: View {
-    @State var email: String = ""
-    @State var password: String = ""
-    @State var isEnabled: Bool = false
+    @EnvironmentObject var userState: UserState
     
     var body: some View {
         VStack {
-            TextField("メールアドレス", text: $email)
+            TextField("メールアドレス", text: $userState.email)
                 .padding(.all, 16.0)
                 .background(Color.white)
+                .foregroundColor(Color.Saketify.backgroundColor)
                 .cornerRadius(24.0)
                 .padding([.leading, .trailing, .bottom], 8.0)
                 .padding(.top, 24.0)
-            SecureField("パスワード", text: $password)
+            Text(userState.emailValidationMessage)
+                .foregroundColor(Color.red)
+                .multilineTextAlignment(.leading)
+                .lineLimit(0)
+            SecureField("パスワード", text: $userState.password)
                 .padding(.all, 16.0)
                 .background(Color.white)
+                .foregroundColor(Color.Saketify.backgroundColor)
                 .cornerRadius(24.0)
                 .padding(.all, 8.0)
-            SaketifyButton(isEnabled: $isEnabled, action: {}, text: "Register")
+            Text(userState.passwordValidationMessage)
+                .foregroundColor(userState.isPasswordEmpty ? Color.white : Color.red)
+                .padding(.bottom, 8.0)
+            SaketifyButton(isEnabled: userState.isEnabled, action: {}, text: "Register")
                 .padding(.top, 8.0)
             Spacer()
         }

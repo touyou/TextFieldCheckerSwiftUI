@@ -10,8 +10,6 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-    @State var isSignUpEnabled: Bool = true
-
     init() {
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()

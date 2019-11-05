@@ -9,8 +9,7 @@
 import SwiftUI
 
 struct SaketifyButton: View {
-    @Binding var isEnabled: Bool
-
+    var isEnabled: Bool
     var action: (() -> Void)
     var text: String
 

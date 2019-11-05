@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Validation {
+enum Validation: Equatable {
     case success
     case error(message: String, count: Int?)
     case empty

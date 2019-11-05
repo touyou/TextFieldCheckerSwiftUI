@@ -21,6 +21,7 @@
 		46516466236E5720001A3216 /* ValidationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46516465236E5720001A3216 /* ValidationChecker.swift */; };
 		46516468236E5D3A001A3216 /* SaketifyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46516467236E5D3A001A3216 /* SaketifyButton.swift */; };
 		4651646A236E617E001A3216 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46516469236E617D001A3216 /* SignUpView.swift */; };
+		46B73CB023710597008A9462 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B73CAF23710597008A9462 /* UserState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		46516465236E5720001A3216 /* ValidationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationChecker.swift; sourceTree = "<group>"; };
 		46516467236E5D3A001A3216 /* SaketifyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaketifyButton.swift; sourceTree = "<group>"; };
 		46516469236E617D001A3216 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		46B73CAF23710597008A9462 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			children = (
 				46516463236E56F5001A3216 /* Validation.swift */,
 				46516465236E5720001A3216 /* ValidationChecker.swift */,
+				46B73CAF23710597008A9462 /* UserState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				46516468236E5D3A001A3216 /* SaketifyButton.swift in Sources */,
 				4651642F236E527E001A3216 /* ContentView.swift in Sources */,
 				46516461236E5557001A3216 /* String+Extension.swift in Sources */,
+				46B73CB023710597008A9462 /* UserState.swift in Sources */,
 				46516464236E56F5001A3216 /* Validation.swift in Sources */,
 				4651646A236E617E001A3216 /* SignUpView.swift in Sources */,
 				4651645F236E5359001A3216 /* Color+Extension.swift in Sources */,
